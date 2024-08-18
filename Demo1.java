@@ -1,35 +1,26 @@
-package com.set.sortedset;
+package com.list.arraylist;
 
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.ArrayList;
 
 public class Demo1 {
 
 	public static void main(String[] args) {
-
-		//SortedSet ss2=new TreeSet();
-		SortedSet ss=new TreeSet();
-		ss.add("A");
-		ss.add("E");
-		ss.add("F");
-		ss.add("E");
-		ss.add("C");
-		ss.add("B");
-		//ss.add(null);
-		//ss.add(10);
-		
-		//ss2.add(null);
-		System.out.println(ss);
-		//System.out.println(ss2);
-		
-		System.out.println(ss.first());
-		System.out.println(ss.last());
-		System.out.println(ss.headSet("E"));
-		System.out.println(ss.tailSet("C"));
-		System.out.println(ss.subSet("B", "F"));
-		System.out.println(ss.comparator());
-		
-		
+     ArrayList list = new ArrayList();
+     list.add(10);
+     list.add(20);
+     list.add(30);
+     list.add(40);
+     list.add(10);
+     list.add("A");
+     list.add("b");
+     list.add(null);
+     
+     System.out.println(list);
+     System.out.println(list.get(5));
+     System.out.println(list.remove(4));
+     System.out.println(list);
+     System.out.println(list.indexOf(10));
+     System.out.println(list.lastIndexOf("b"));
 	}
 
 }
